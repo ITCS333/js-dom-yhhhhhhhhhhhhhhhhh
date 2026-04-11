@@ -3,47 +3,50 @@
  */
 function changeHeadingText() {
   // TODO:
-  const heading = document.getElementById("main-heading");
-  heading.textContent = "DOM Manipulation Challenge";
+  const heading = document.getElementById('main-heading');
+  heading.textContent = 'DOM Manipulation Challenge';
 }
 }
 
 /**
  * Selects the element with the id 'box-to-modify' and changes its background color to 'lightblue'.
  */
-function changeBoxColor() {
+functionchangeBoxColor() {
   // TODO:  
-  const box = document.getElementById("box-to-modify");
-  box.style.backgroundColor = "lightblue";
+  const box = document.getElementById('box-to-modify');
+  box.style.backgroundColor = 'lightblue';
 }
 
 /**
  * Creates a new <li> element, sets its text content to 'New Item', and appends it to the <ul> with the id 'item-list'.
  */
-function addNewItem() {
+functionaddNewItem() {
   // TODO:
-   const ul = document.getElementById("item-list");
-  const li = document.createElement("li");
-  li.textContent = "New Item";
-  ul.appendChild(li);
+   const  newuli= document.creatElment('li');
+  newli.textContent = 'New Item';
+  const list = document.getElmentById('item-list')
+  list.appendChild(newLi);
 }
+ 
 
 /**
  * Selects the paragraph with the class 'content-para' and adds the class 'highlight' to it.
  */
-function highlightParagraph() {
+functionhighlightParagraph() {
   // TODO:
-  const para = document.querySelector(".content-para");
-  para.classList.add("highlight");
+  const para= document.querySelector('.content-para');
+  para.classList.add('highlight');
 }
 
 /**
  * Selects the element with the id 'to-be-removed' and removes it from the DOM.
  */
-function removeElement() {
+functionremoveElement() {
   // TODO: 
-  const element = document.getElementById("to-be-removed");
-  element.remove();
+  const element = document.getElementById('to-be-removed');
+ if (element) {
+    element.remove();
+  }
 }
 
 
