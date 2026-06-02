@@ -1,7 +1,7 @@
 /**
  * Selects the element with the id 'main-heading' and changes its text content to 'DOM Manipulation Challenge'.
  */
-function changeHeadingText() {
+function changeHeadingText() { 
   const heading = document.getElementById('main-heading');
    heading.textContent = 'DOM Manipulation Challenge';
 
